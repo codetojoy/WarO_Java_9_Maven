@@ -1,3 +1,8 @@
+**/jars
+**/libs
+**/mjars
+**/target
+
 target/
 pom.xml.tag
 pom.xml.releaseBackup
