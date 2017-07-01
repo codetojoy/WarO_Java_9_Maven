@@ -18,6 +18,10 @@
 * `./prepare.sh`
 * `./run_waro_main.sh`
 
+### Notes
+
+* open [JIRA issue](https://issues.apache.org/jira/projects/MCOMPILER/issues/MCOMPILER-294?filter=allopenissues) re: unit tests
+
 ### WarO_Java_9
 
 WarO is a code kata based on a simple card game. Rules are documented [here](https://github.com/peidevs/WarO_Java/blob/master/README.md).
