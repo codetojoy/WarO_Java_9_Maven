@@ -34,8 +34,11 @@ written without modules in mind.
 * `org.peidevs.waro.base`
     * requires Spring "automatic modules"
     * exports several utility packages
+    * see module-info.java [here](https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/org.peidevs.waro.base/src/main/java/module-info.java)
 * `org.peidevs.waro.function`
     * requires `org.peidevs.waro.base` and Guava automatic module
     * exports functional packages 
+    * see module-info.java [here](https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/org.peidevs.waro.function/src/main/java/module-info.java)
 * `org.peidevs.waro.main`
     * requires `org.peidevs.waro.base` and `org.peidevs.waro.function`
+    * see module-info.java [here](https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/org.peidevs.waro.main/src/main/java/module-info.java)
