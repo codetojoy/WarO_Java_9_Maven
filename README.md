@@ -21,6 +21,7 @@
 ### Notes
 
 * Unit tests do not run. I believe the relavent JIRA issue is [here](https://issues.apache.org/jira/projects/MCOMPILER/issues/MCOMPILER-294?filter=allopenissues).
+* I'm a newbie with Maven (I'm more comfortable with Gradle and, long ago, Ant). I'm sure there is a way to run the app using Maven, but for now, I use scripts to setup the runtime environment and run the app.
 
 ### WarO_Java_9
 
