@@ -20,21 +20,21 @@
 
 ### Notes
 
-* open [JIRA issue](https://issues.apache.org/jira/projects/MCOMPILER/issues/MCOMPILER-294?filter=allopenissues) re: unit tests
+* Unit tests do not run. I believe the relavent JIRA issue is [here](https://issues.apache.org/jira/projects/MCOMPILER/issues/MCOMPILER-294?filter=allopenissues).
 
 ### WarO_Java_9
 
-WarO is a code kata based on a simple card game. Rules are documented [here](https://github.com/peidevs/WarO_Java/blob/master/README.md).
+WarO is a code kata based on a simple card game. Rules are documented [here](https://github.com/peidevs/WarO_Java/blob/master/Rules.md).
 
 ### Java 9 Features 
 
 * This example contains 3 modules. They are somewhat arbitrary, as this project was
 written without modules in mind.
-* org.peidevs.waro.base
+* `org.peidevs.waro.base`
     * requires Spring "automatic modules"
     * exports several utility packages
-* org.peidevs.waro.function
+* `org.peidevs.waro.function`
     * requires `org.peidevs.waro.base` and Guava automatic module
     * exports functional packages 
-* org.peidevs.waro.main
+* `org.peidevs.waro.main`
     * requires `org.peidevs.waro.base` and `org.peidevs.waro.function`
