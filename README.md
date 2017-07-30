@@ -31,6 +31,7 @@ WarO is a code kata based on a simple card game. Rules are documented [here](htt
 
 * This example contains 3 modules. They are somewhat arbitrary, as this project was
 written without modules in mind.
+* See diagram below.
 * `org.peidevs.waro.base`
     * requires Spring "automatic modules"
     * exports several utility packages
@@ -42,3 +43,8 @@ written without modules in mind.
 * `org.peidevs.waro.main`
     * requires `org.peidevs.waro.base` and `org.peidevs.waro.function`
     * see module-info.java [here](https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/org.peidevs.waro.main/src/main/java/module-info.java)
+
+* Overview:
+
+<img style="float: center;" src="https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/images/module_diagram_WarO.png"></img>
+
