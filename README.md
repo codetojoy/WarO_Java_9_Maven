@@ -20,8 +20,9 @@
 
 ### Notes
 
-* Unit tests do not run. I believe the relevant JIRA issue is [here](https://issues.apache.org/jira/projects/MCOMPILER/issues/MCOMPILER-294?filter=allopenissues).
+* Unit tests now run! I believe this is because this JIRA issue is [here](https://issues.apache.org/jira/projects/MCOMPILER/issues/MCOMPILER-294?filter=allopenissues) is resolved.
 * I'm a newbie with Maven (I'm more comfortable with Gradle and, long ago, Ant). I'm sure there is a way to run the app using Maven, but for now, I use scripts to setup the runtime environment and run the app.
+    * [This doc](http://www.mojohaus.org/exec-maven-plugin/examples/example-exec-for-java-programs.html) for the Exec Maven Plugin looks promising, but I couldn't get it to work. 
 
 ### WarO_Java_9
 
