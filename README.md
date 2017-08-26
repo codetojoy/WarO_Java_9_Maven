@@ -3,6 +3,30 @@
 * derived from [this project](https://github.com/cfdobber/maven-java9-jigsaw)
 * example illustration building JDK 9 modules with Maven
 
+### WarO_Java_9
+
+WarO is a code kata based on a simple card game. Rules are documented [here](https://github.com/peidevs/WarO_Java/blob/master/Rules.md).
+
+### Java 9 Features 
+
+* This example contains 3 modules. They are somewhat arbitrary, as this project was
+written without modules in mind.
+* Overview:
+
+<img style="float: center;" src="https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/images/module_diagram_WarO.png"></img>
+
+* `org.peidevs.waro.base`
+    * requires Spring "automatic modules"
+    * exports several utility packages
+    * see module-info.java [here](https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/org.peidevs.waro.base/src/main/java/module-info.java)
+* `org.peidevs.waro.function`
+    * requires `org.peidevs.waro.base` and Guava automatic module
+    * exports functional packages 
+    * see module-info.java [here](https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/org.peidevs.waro.function/src/main/java/module-info.java)
+* `org.peidevs.waro.main`
+    * requires `org.peidevs.waro.base` and `org.peidevs.waro.function`
+    * see module-info.java [here](https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/org.peidevs.waro.main/src/main/java/module-info.java)
+
 ### Prerequisites
 
 * JDK 9 b170+
@@ -24,28 +48,4 @@
 * I'm a newbie with Maven (I'm more comfortable with Gradle and, long ago, Ant). I'm sure there is a way to run the app using Maven, but for now, I use scripts to setup the runtime environment and run the app.
     * [This doc](http://www.mojohaus.org/exec-maven-plugin/examples/example-exec-for-java-programs.html) for the Exec Maven Plugin looks promising, but I couldn't get it to work. 
 
-### WarO_Java_9
-
-WarO is a code kata based on a simple card game. Rules are documented [here](https://github.com/peidevs/WarO_Java/blob/master/Rules.md).
-
-### Java 9 Features 
-
-* This example contains 3 modules. They are somewhat arbitrary, as this project was
-written without modules in mind.
-* See diagram below.
-* `org.peidevs.waro.base`
-    * requires Spring "automatic modules"
-    * exports several utility packages
-    * see module-info.java [here](https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/org.peidevs.waro.base/src/main/java/module-info.java)
-* `org.peidevs.waro.function`
-    * requires `org.peidevs.waro.base` and Guava automatic module
-    * exports functional packages 
-    * see module-info.java [here](https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/org.peidevs.waro.function/src/main/java/module-info.java)
-* `org.peidevs.waro.main`
-    * requires `org.peidevs.waro.base` and `org.peidevs.waro.function`
-    * see module-info.java [here](https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/org.peidevs.waro.main/src/main/java/module-info.java)
-
-* Overview:
-
-<img style="float: center;" src="https://github.com/codetojoy/WarO_Java_9_Maven/blob/master/images/module_diagram_WarO.png"></img>
 
