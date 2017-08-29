@@ -8,10 +8,10 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.toList;
 
 import org.peidevs.waro.player.*;
-import org.peidevs.waro.strategy.Strategy;
-import org.peidevs.waro.strategy.impl.*;
+import org.peidevs.waro.strategy.*;
 
 public class DealerTest {
+    private final Strategy strategy = Strategies.getMaxCardStrategy();
 
     @Test
     public void testDeal_Table_Basic() {
@@ -19,7 +19,6 @@ public class DealerTest {
 
         int numCards = 12;
         int maxCard = numCards;
-        Strategy strategy = new MaxCard();
         List<Player> players = new ArrayList<>();
         
         Hand h1 = new Hand(Arrays.asList(new Integer[]{1,2,3}));

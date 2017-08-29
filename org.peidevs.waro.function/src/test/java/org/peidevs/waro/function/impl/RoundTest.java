@@ -1,8 +1,7 @@
 package org.peidevs.waro.function.impl;
 
 import org.peidevs.waro.player.*;
-import org.peidevs.waro.strategy.Strategy;
-import org.peidevs.waro.strategy.impl.*;
+import org.peidevs.waro.strategy.*;
 
 import static org.junit.Assert.*;
 import java.util.*;
@@ -12,12 +11,12 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.toList;
 
 public class RoundTest {
+    private final Strategy strategy = Strategies.getMaxCardStrategy();
 
     @Test
     public void testApply_Basic() {
         int numCards = 12;
         int maxCard = numCards;
-        Strategy strategy = new MaxCard();
         List<Player> players = new ArrayList<>();
         
         Hand h1 = new Hand(Arrays.asList(new Integer[]{1,2,3}));
@@ -53,7 +52,6 @@ public class RoundTest {
         Round round = new Round();
         int numCards = 12;
         int maxCard = numCards;
-        Strategy strategy = new MaxCard();
         List<Player> players = new ArrayList<>();
         
         Hand h1 = new Hand(Arrays.asList(new Integer[]{1,2,3}));
@@ -79,7 +77,6 @@ public class RoundTest {
     public void testFindWinningBid_Basic() {
         Round round = new Round();
         int maxCard = 50;
-        Strategy strategy = new MaxCard();
         
         Player p1 = new Player("Beethoven", strategy, maxCard, new Hand());
         Player p2 = new Player("Chopin", strategy, maxCard, new Hand());
