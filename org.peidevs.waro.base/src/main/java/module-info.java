@@ -9,4 +9,6 @@ module org.peidevs.waro.base {
     exports org.peidevs.waro.player;
     exports org.peidevs.waro.strategy;
     exports org.peidevs.waro.util;
+
+    exports org.peidevs.waro.strategy.impl;
 }
