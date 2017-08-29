@@ -5,7 +5,7 @@
 
 ### WarO_Java_9
 
-WarO is a simple card game; the rules are documented [here](https://github.com/peidevs/WarO_Java/blob/master/Rules.md). The game is a [popular](https://github.com/peidevs/Resources/blob/master/Examples.md) exercise for members of the [PEI Developers MeetUp](https://www.meetup.com/pei-developers/) to illustrate various technologies.
+WarO is a simple card game; the rules are documented [here](https://github.com/peidevs/WarO_Java/blob/master/Rules.md). The game is a [popular](https://github.com/peidevs/Resources/blob/master/Examples.md) exercise for members of the [PEI Developers](http://peidevs.github.io) user group to illustrate various technologies.
 
 ### Java 9 Features 
 
