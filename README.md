@@ -46,6 +46,6 @@ written without modules in mind.
 
 * Unit tests now run! I believe due to resolution of [this JIRA issue](https://issues.apache.org/jira/projects/MCOMPILER/issues/MCOMPILER-294?filter=allopenissues).
 * I'm a newbie with Maven (I'm more comfortable with Gradle). I'm sure there is a way to run the app using Maven, but for now, I use scripts to setup the runtime environment and run the app.
-    * [This doc](http://www.mojohaus.org/exec-maven-plugin/examples/example-exec-for-java-programs.html) for the Exec Maven Plugin looks promising, but I couldn't get it to work. Likely my fault.
+    * [This doc](http://www.mojohaus.org/exec-maven-plugin/examples/example-exec-for-java-programs.html) for the Exec Maven Plugin looks promising, but I couldn't get it to work. I encountered [this issue](https://github.com/mojohaus/exec-maven-plugin/issues/83). 
 
 
