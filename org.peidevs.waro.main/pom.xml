@@ -34,6 +34,30 @@
                     <outputDirectory>../libs</outputDirectory>
                 </configuration>
             </plugin>
+
+<!--
+$-class-path $CLASSPATH \
+$-module-path $MLIB:$MJARS \
+$-add-modules org.peidevs.waro.main \
+$-add-opens java.base/java.lang=spring.core \
+org.peidevs.waro.Main
+-->
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>exec-maven-plugin</artifactId>
+              <version>1.6.0</version>
+              <configuration>
+                  <executable>java</executable>
+                  <arguments>
+                    <argument>--class-path /Users/measter/src/github/codetojoy/WarO_Java_9_Maven/jars/*</argument>
+                    <argument>--module-path /Users/measter/src/github/codetojoy/WarO_Java_9_Maven/mjars:/Users/measter/src/github/codetojoy/WarO_Java_9_Maven/libs</argument>
+                    <argument>--add-modules org.peidevs.waro.main</argument>
+                    <argument>--add-opens java.base/java.lang=spring.core</argument>
+                    <argument>--module org.peidevs.waro.main</argument>
+                  </arguments>
+                  <mainClass>org.peidevs.waro.Main</mainClass>
+              </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
